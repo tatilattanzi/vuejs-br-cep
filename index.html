@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>vuejs-br-cep</title>
+</head>
+
+<body>
+    <div id="vue-app">
+
+        <div class="row">
+
+            <form action="#">
+
+                <div class="row">
+                    <!-- CEP -->
+                    <div class="form-group">
+                        <label for="inputCep">CEP</label>
+                        <input id="inputCep" type="text" class="form-control" v-model="cep" v-on:keyup="search">
+                    </div>
+
+                    <!-- Logradouro -->
+                    <div class="form-group">
+                        <label for="inputLogradouro">Logradouro</label>
+                        <input id="inputLogradouro" type="text" class="form-control" v-model="endereco.logradouro">
+                    </div>
+
+                    <!-- Numero -->
+                    <div class="form-group">
+                        <label for="inputNro">Numero</label>
+                        <input id="inputNro" type="text" class="form-control" v-model="endereco.numero">
+                    </div>
+
+                    <!-- Complemento -->
+                    <div class="form-group">
+                        <label for="inputCpl">Complemento</label>
+                        <input id="inputCpl" type="text" class="form-control" v-model="endereco.complemento">
+                    </div>
+
+                    <!-- Bairro -->
+                    <div class="form-group">
+                        <label for="inputBairro">Bairro</label>
+                        <input id="inputBairro" type="text" class="form-control" v-model="endereco.bairro">
+                    </div>
+
+                    <!-- Cidade -->
+                    <div class="form-group">
+                        <label for="inputCidade">Cidade</label>
+                        <input id="inputCidade" type="text" class="form-control" v-model="endereco.localidade">
+                    </div>
+
+                    <!-- UF -->
+                    <div class="form-group">
+                        <label for="inputUf">UF</label>
+                        <input id="inputUf" type="text" class="form-control" v-model="endereco.uf">
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
